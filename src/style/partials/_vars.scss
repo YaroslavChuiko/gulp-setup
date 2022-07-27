@@ -1,0 +1,32 @@
+//web-site font stack: 
+//Open Sans: light, regular, semi-bold, semi-bold italic, bold, bold italic;
+//Source Sans Pro: light, regular, semi-bold, bold;
+
+$font-stack: 'Open Sans', sans-serif;
+$black: #202020;
+$gray: #999999;
+$gray-light: #cbc6c0;
+$gray-title: #6a6a6a;
+$white: #f4f5f9;
+$red: #fa4d3a;
+
+@mixin for-laptop {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin for-tablet-landscape {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+@mixin for-tablet-portrait {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin for-phone-only {
+    @media (max-width: 578px) {
+        @content;
+    }
+}

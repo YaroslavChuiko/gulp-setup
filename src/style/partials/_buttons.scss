@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+
+    font-family: $font-stack;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    vertical-align: middle;
+    
+    // letter-spacing: 1px;
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    
+    border-radius: 3px;
+    box-shadow: 1px 4px 5px rgba(#000000, 0.25);
+
+    transition: color, background-color, border-color, box-shadow, 0.2s linear;
+    cursor: pointer;
+
+    + .btn {
+        margin-left: 30px;
+    }
+
+    &--size_sm {
+        padding: 16px 30px;
+        min-width: 145px;
+        max-height: 46px;
+        font-weight: 600;
+    }
+
+    &--size_lg {
+        padding: 21px 42px;
+        min-width: 225px;
+        max-height: 56px;
+    }
+
+    &--style_red {
+        background-color: $red;
+        border: 0;
+    }
+
+    &--style_transparent {
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+}

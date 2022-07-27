@@ -1,0 +1,127 @@
+.communication {
+    background-color: $white;
+}
+
+.communication__inner {
+    padding-bottom: 150px;
+}
+
+.communication__content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.communication__contact,
+.communication__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(#000000, 0.1);
+}
+
+.communication__contact {
+    padding: 100px 90px;
+    margin-right: 30px;
+    width: 41%;
+}
+.communication__form {
+    width: 56%;
+    padding: 80px 100px;
+}
+
+.communication__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: 70px;
+    }
+}
+
+.communication__title {
+    margin-bottom: 20px;
+
+    font-family: "Source Sans Pro", serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $red;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.communication__address {
+    font-size: 18px;
+    font-style: normal;
+    color: $gray;
+}
+
+.communication__link {
+    font-size: 18px;
+    color: $gray;
+    text-decoration: none;
+
+    transition: 0.2s linear;
+
+    + .communication__link {
+        margin-top: 5px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        color: $red;
+    }
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > ::placeholder {
+        font-family: $font-stack;
+        font-size: 14px;
+        font-weight: 600;
+        color: $gray;
+    }
+
+    & > :focus {
+        outline: none;
+        border-color: $red;
+        color: $red;
+    }
+
+    & > :focus::-webkit-input-placeholder {
+        color: $red;
+        transition: color, 0.2s linear;
+    }
+}
+
+.form__field {
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+
+    font-family: $font-stack;
+    color: $gray;
+
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    font-size: 14px;
+
+    transition: border-color, color, 0.2s linear;
+
+    &_textarea {
+        margin-bottom: 30px;
+        width: 100%;
+        min-height: 135px;
+        resize: none;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,122 @@
+.pricing__inner {
+    padding-bottom: 140px;
+}
+
+.pricing__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & button {
+        background-color: $gray;
+    }
+
+    &:hover button,
+    &:hover .pricing__item-header {
+        background-color: $red;
+    }
+
+    &:hover .pricing__price-title {
+        color: $red;
+    }
+}
+
+.pricing__item-header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 205px;
+    text-align: center;
+
+    background-color: $gray;
+    transition: background-color, 0.2s linear;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        background-color: rgba(#fff, 0.25);
+    }
+}
+
+.pricing__title {
+    margin-top: 50px;
+
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pricing__item-body {
+    position: relative;
+    padding: 120px 0 50px;
+    background-color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.pricing__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 152px;
+    width: 152px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.pricing__price-title {
+    font-family:"Source Sans Pro", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: $gray;
+
+    transition: color, 0.2s linear;
+}
+
+.pricing__price-subtitle {
+    font-family:"Source Sans Pro", serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: $gray;
+    text-transform: lowercase;
+}
+
+.pricing__list {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing__list-item {
+    padding-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+}

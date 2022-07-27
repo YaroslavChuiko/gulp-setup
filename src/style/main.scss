@@ -1,0 +1,70 @@
+@import "partials/vars";
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    font-size: 1rem;
+    color: $gray;
+
+    background-color: #fff;
+
+    // &.no-scroll {
+    //     overflow: hidden;
+    // }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    // &--big {
+    //     max-width: 1800px;
+    // }
+}
+
+// Vendor
+// @import "vendor/slick";
+
+// Blocks
+@import "partials/header";
+@import "partials/intro";
+@import "partials/buttons";
+@import "partials/who";
+@import "partials/about";
+@import "partials/services";
+@import "partials/portfolio";
+@import "partials/statistics";
+@import "partials/pricing";
+@import "partials/clients";
+@import "partials/contact";
+// @import "partials/footer";
+// @import "partials/dropdown-menu";
+
+// Helpers
+@import "partials/helpers";

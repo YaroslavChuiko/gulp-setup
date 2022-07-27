@@ -1,0 +1,45 @@
+.clients {
+    background-color: $white;
+    border-bottom: 1px solid #d8d9db;
+}
+
+.clients__inner {
+    padding-bottom: 115px;
+}
+
+.clients__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 100px;
+    margin: 0 13px 26px;
+    background-color: #fff;
+
+    overflow: hidden;
+    transition: box-shadow, background-color 0.2s linear;
+
+    &:hover {
+        background-color: $red;
+        box-shadow: 3px 3px 10px rgba(#000000, 0.3);
+    }
+
+    &:hover .clients__icon {
+        fill: #fff;
+    }
+
+}
+
+.clients__icon {
+    width: 140px;
+    height: auto;
+    fill: #b3b3b3;
+
+    transition: fill 0.2s linear;
+}

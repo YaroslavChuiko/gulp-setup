@@ -1,0 +1,29 @@
+.about__inner {
+    padding: 140px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about__picture,
+.about__content {
+    width: 50%;
+}
+
+.about__picture {
+    padding-right: 6.8%;
+}
+
+.about__text {
+    margin-top: 45px;
+    font-size: 13px;
+    font-family: "Source Sans Pro" serif;
+    color: $gray;
+    line-height: 2;
+    
+    // letter-spacing: 1px;
+
+    & p {
+        margin-bottom: 40px;
+    }
+}
